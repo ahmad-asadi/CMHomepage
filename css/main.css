@@ -1,5 +1,5 @@
 @import url('preloader.css');
-@import url('bootstrap.css');
+@import url('../bootstrap-rtl-3.3.4/dist/css/bootstrap-rtl.min.css');
 @import url('theme.css');
 /* Start you custom CSS styling here 
 ------------------------------------------*/

@@ -12,6 +12,7 @@
 	<title>کامنت ماینر</title>
 	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon-precomposed.png">
 	<!-- Bootstrap core CSS -->
+	<link href="bootstrap-rtl-3.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap-rtl-3.3.4/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="css/main.css">
@@ -23,13 +24,12 @@
 	<script src="bootstrap-rtl-3.3.4/js/respond.min.js"></script>
 	<![endif]-->
 </head>
-
 <body class="dark-page" data-spy="scroll" data-target=".navscroll">
 
 <!-- preloader -->
 <div id="loader-wrapper">
 	<div id="loader" class="loader"></div>
-	<p class="wow flash strong" data-wow-duration="2s" data-wow-iteration="1000">Loading...</p>
+	<p class="wow flash strong" data-wow-duration="2s" data-wow-iteration="1000">در حال بارگزاری ...</p>
 </div>
 
 <!-- main wrapper -->
@@ -42,19 +42,27 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navscroll"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="#home" title="Dove - Modern Start Up landing Page"><img src="img/logos/logo-nav.png" width="80" height="31" alt="Dove"></a> </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navscroll">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home" style="float: left;" title="صفحه نخست commentminer">
+					<img src="img/logos/logo%20(1).png"  height="31" alt="commentminer"></a>
+			</div>
 			<div class="navbar-collapse collapse navscroll">
-				<div class="navbar-form navbar-right"> <a href="javascript:void(0);" title="Download Dove Now" class="btn btn-primary">Download</a> </div>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#facts">Facts</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#plans">Plans</a></li>
-					<li><a href="#faq">FAQ</a></li>
-					<li><a href="#subscribe">Subscribe</a></li>
+					<li><a href="#home">خانه</a></li>
+					<li><a href="#description">کامنت ماینر چیست؟</a></li>
+					<li><a href="#features">خدمات</a></li>
+					<li><a href="#facts">خدمات</a></li>
+					<li><a href="#team">مشتریان</a></li>
+					<!--<li><a href="#testimonials">Testimonials</a></li>-->
+					<!--<li><a href="#plans"></a></li>-->
+					<!--<li><a href="#faq">تماس با ما</a></li>-->
+					<li><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">تماس با ما</a></li>
+					<!--<li><a href="#subscribe">Subscribe</a></li>-->
 				</ul>
 			</div>
 			<!--/.navbar-collapse --> 
@@ -62,29 +70,30 @@
 	</nav>
 	
 	<!-- main banner (slider area) -->
-	<section class="home animated-bg" id="home"> <a href="#home" title="Dove - Modern Start Up landing Page" class="logo-lg wow zoomIn" data-wow-delay="0.5s"><img src="img/logos/logo-lg.png" width="121" height="44" alt="Dove"></a>
-	<h1 class="tlt">
-		<span class="texts">
-			<span>Check out our dove landing page</span>
-			<span>You love it? Not... Really!!</span>
-			<span>Get your free 30 days trial right here</span>
-			<span>Moreover we offer 60 days money back guarantee</span>
-		</span>
-	</h1>
-	<p class="strong">We understand your needs, just give it a try</p>
-	<div class="cta-wrap">
-		<div class="try-it-wrap wow fadeInLeft" data-wow-delay="3s"> <a class="btn btn-primary btn-xl" title="give it a try">Give it a try &nbsp;&nbsp;<i class="fa fa-angle-double-right"></i></a> <small><i class="fa fa-info-circle"></i> No credit card required.</small> </div>
-		<div class="watch-wrap wow fadeInRight" data-wow-delay="3s"> <a class="btn btn-link btn-xl lightbox"  href="http://vimeo.com/63987795" title="This is a sample video title."><i class="fa fa-play-circle"></i> Watch intorductory video</a> </div>
-	</div>
-	<div class="container img-slides"> <img src="img/thumbs/slide-img-2.jpg" class="left-img wow fadeInUp" data-wow-delay="2.2s" id="slideLeft" width="770" height="400" alt="Put you own image title here"> <img src="img/thumbs/slide-img-3.jpg" class="right-img wow fadeInUp" data-wow-delay="1.6s" id="slideRight" width="770" height="400" alt="Put you own image title here">
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2"><img class="wow fadeInUp" data-wow-delay="1s" src="img/thumbs/slide-img-1.jpg" id="slideFront" width="770" height="400" alt="Put you own image title here"></div>
+	<section class="home animated-bg" id="home"> <a href="#home" title="کامنت ماینر - مدیریت نظرات" class="logo-lg wow zoomIn" data-wow-delay="0.5s"><img src="img/logos/logo%20(1).png" height="44" alt="کامنت ماینر"></a>
+		<h1 class="tlt">
+			<span class="texts">
+				<span>را&#xFEEB&#xFEDC&#xFE8Eر&#xFBAC&#xFE8Eی &#xFBACو&#xFEB7&#xFEE4&#xFEE8&#xFEAA &#xFEE3&#xFEAA&#xFEF3ر&#xFEF3&#xFE96 &#xFEE7&#xFEC8رات &#xFEDB&#xFE8Eر&#xFE91ران</span>
+				<span>را&#xFEEB&#xFEDC&#xFE8Eر&#xFBAC&#xFE8Eی &#xFBACو&#xFEB7&#xFEE4&#xFEE8&#xFEAA &#xFEB3&#xFEE8&#xFEA0&#xFEB6 &#xFEE3&#xFEA4&#xFE98&#xFEEEای &#xFEE7&#xFEC8رات &#xFEDB&#xFE8Eر&#xFE91ران</span>
+				<span>&#xFEDB&#xFE8Eر&#xFE91را&#xFEE7&#xFE98&#xFE8E&#xFEE5 &#xFB7C&#xFEEA &#xFEE3&#xFBFD&zwnj;&#xFB94&#xFEEE&#xFEF3&#xFEE8&#xFEAA؟</span>
+			</span>
+		</h1>
+		<p class="strong">1 توضیح دلخواه کوچیک</p>
+		<div class="cta-wrap">
+			<div class="try-it-wrap wow fadeInLeft" data-wow-delay="3s"><a class="btn btn-primary btn-xl" title="امتحان کن!"><i class="fa fa-angle-double-right"></i> امتحان کنید! </a> </div>
+			<div class="watch-wrap wow fadeInRight" data-wow-delay="3s"> <a class="btn btn-link btn-xl lightbox"  href="#" title="This is a sample video title."><i class="fa fa-angle-down"></i> بیشتر آشنا شوید!</a> </div>
 		</div>
-	</div>
+		<div class="container img-slides">
+			<img src="img/thumbs/slide-img-2.jpg" class="left-img wow fadeInUp" data-wow-delay="2.2s" id="slideLeft" width="770" height="400" alt="Put you own image title here">
+			<img src="img/thumbs/slide-img-3.jpg" class="right-img wow fadeInUp" data-wow-delay="1.6s" id="slideRight" width="770" height="400" alt="Put you own image title here">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2"><img class="wow fadeInUp" data-wow-delay="1s" src="img/thumbs/slide-img-1.jpg" id="slideFront" width="770" height="400" alt="Put you own image title here"></div>
+			</div>
+		</div>
 	</section>
 	
 	<!-- client logos -->
-	<section class="clients">
+	<!--<section class="clients">
 	<div class="container">
 		<div class="owl-carousel" id="owl-carousel">
 			<div><a href="#" title="3docean"><img src="img/logos/3docean.png" width="165" height="35" alt="3docean"></a></div>
@@ -96,276 +105,367 @@
 			<div><a href="#" title="videohive"><img src="img/logos/videohive.png" width="165" height="35" alt="videohive"></a></div>
 		</div>
 	</div>
-	</section>
-	
+	</section>-->
+
+    <!-- description section (tabs) -->
+    <section class="block white-bg features" id="description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>کامنت‌ماینر چیست؟</h2>
+                    <p class="lead" align="justify">کامنت‌ماینر مجموعه‌ای از راهکارهای هوشمند مدیریت و سنجش محتوای نظرات کابران قابل استفاده برای استفاده انواع وبسایت‌ها، شبکه‌‌های اجتماعی و انجمن‌های گفتگو، سیستم‌های وبلاگ‌نویسی، نرم‌افزار‌های موبایل و ... است.</p>
+                    <br><br>
+                    <h3>کامنت‌ماینر برای چه کسانی مناسب است؟</h3>
+                    <br>
+                    <div class="wow zoomIn text-block style2" data-wow-delay="0.4s">
+                        <i class="pe-7s-news-paper"></i>
+                        <h4>وبسایت‌های خبری، ورزشی، شبکه‌های اجتماعی</h4>
+                        <p>نگران محتوای نظرات کاربران روی پست‌های خود هستید؟</p>
+                        <p>نظارت دستی روی محتوای نظرات کاربرانتان وقت و هزینه زیادی از شما می‌گیرد؟</p>
+                        <p>نظرات توهین‌آمیز و خلاف‌ادب دریافت می‌کنید؟</p>
+                        <p>نظرات نامرتبط به موضوع پست‌ها را فیلتر می‌کنید؟</p>
+                        <p>کاربرانتان لابلای نظراتشان به تبلیغات می‌پردازند؟</p>
+                    </div>
+                    <div class="wow zoomIn text-block style2" data-wow-delay="0.4s">
+                        <i class="pe-7s-shopbag"></i>
+                        <h4>فروشگاه‌های آنلاین، فروشگاه‌های نرم‌افزار موبایل</h4>
+                        <p>می‌خواهید نظرات مثبت و منفی کاربران را تفکیک کنید؟</p>
+                        <p>علاقه‌مندید براساس محتوای نظرات به کالاها امتیاز بدهید؟</p>
+                        <p>محتوای خیلی از گزارشات کاربران تکراری است؟</p>
+                    </div>
+                    <div class="wow zoomIn text-block style2" data-wow-delay="0.4s">
+                        <i style="float: right" class="pe-7s-phone"></i>
+                        <h4>نرم‌افزارهای موبایل</h4>
+                        <p>نرم‌افزارتان بخش گفتگو و نظردهی دارد؟</p>
+                        <p>نگران از دست دادن کاربران به علت محتوای برخی از نظرات هستید؟</p>
+                        <p>دنبال یک راه‌حل ارزان و ساده هستید؟</p>
+                    </div>
+                </div>
+                <div class="col-md-6 hidden-xs">
+                    <div class="layered-imgs"> <img class="wow fadeInLeft back" data-wow-delay="1.2s" src="img/thumbs/iphone-layer-2.png" width="570" height="730" alt="iPhone 6"> <img class="wow fadeInLeft" data-wow-delay="0.7s" src="img/thumbs/iphone-layer-1.png" width="570" height="730" alt="iPhone 6"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA download -->
+    <section class="block img-bg img2 download-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+                    <div class="cta">
+                        <h2><small class="blocked"></small>همین حالا دانلود کنید! </h2>
+                        <form action="scripts/download.php" method="post" id="downloadForm">
+                            <div class="input-group">
+                                <input class="form-control input-xl" type="email" name="email" id="downloadEmail" placeholder="ادرس ایمیل">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary btn-xl" id="dLoad" ><i class="pe-7s-download"></i> <span class="hidden-xs">دانلود </span></button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="dLoadResponse" class="d-load-response"></div>
+                        <br><br>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main features section (tabs) -->
+    <!--<section class="block white-bg features" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div role="tabpanel">
+                        &lt;!&ndash; Nav tabs &ndash;&gt;
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#tabOne" aria-controls="tabOne" role="tab" data-toggle="tab"><i class="pe-7s-anchor"></i></a></li>
+                            <li role="presentation"><a href="#tabTwo" aria-controls="tabTwo" role="tab" data-toggle="tab"><i class="pe-7s-stopwatch"></i></a></li>
+                            <li role="presentation"><a href="#tabThree" aria-controls="tabThree" role="tab" data-toggle="tab"><i class="pe-7s-graph1"></i></a></li>
+                            <li role="presentation"><a href="#tabFour" aria-controls="tabFour" role="tab" data-toggle="tab"><i class="pe-7s-network"></i></a></li>
+                            <li role="presentation"><a href="#tabFive" aria-controls="tabFive" role="tab" data-toggle="tab"><i class="pe-7s-help2"></i></a></li>
+                        </ul>
+
+                        &lt;!&ndash; Tab panes &ndash;&gt;
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="tabOne">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Instant messaging system</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        <ul class="icon-list">
+                                            <li class="wow fadeInUp" data-wow-delay="0.6s"><i class="pe-7s-comment"></i> Lorem ipsum dolor sitaet, elit. Done lectus non purus vestibulum.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="0.7s"><i class="pe-7s-compass"></i> Integer quis elit id felis condimentum fermentum.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="0.8s"><i class="pe-7s-bluetooth"></i> Nulla eleifend justo eu urna ultrices tincidunt pretium.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="0.9s"><i class="pe-7s-scissors"></i> Quisque lacinia auctor mattis. Duis sed nisl justo.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="1s"><i class="pe-7s-plug"></i> Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit lectus.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="1.1s"><i class="pe-7s-joy"></i> Etiam varius dui eget lorem elementum eget mattis sapien interdum.</li>
+                                            <li class="wow fadeInUp" data-wow-delay="1.2s"><i class="pe-7s-way"></i> Nulla eleifend justo eu urna ultrices sed auctor tincidunt pretium.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 hidden-xs">
+                                        <div class="layered-imgs"> <img class="wow fadeInRight back" data-wow-delay="1.2s" src="img/thumbs/macbook-pro-layer-2.png" width="570" height="305" alt="Mac Book Pro"> <img class="wow fadeInRight" data-wow-delay="0.6s" src="img/thumbs/macbook-pro-layer-1.png" width="570" height="305" alt="Mac Book Pro"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tabTwo">
+                                <div class="row">
+                                    <div class="col-md-6 hidden-xs">
+                                        <div class="layered-imgs"> <img class="back" src="img/thumbs/imac-layer-2.png" width="570" height="480" alt="iMac Retina"> <img src="img/thumbs/imac-layer-1.png" width="570" height="480" alt="iMac Retina"> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>All the features you need</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante. Etiam varius eget lorem elementum eget mattis interdum.</p>
+                                        <div class="text-block style2"> <i class="pe-7s-display2"></i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        </div>
+                                        <div class="text-block style2"> <i class="pe-7s-shopbag"></i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        </div>
+                                        <div class="text-block style2"> <i class="pe-7s-share"></i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        </div>
+                                        <div class="text-block style2"> <i class="pe-7s-id"></i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tabThree">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Integration with smartphones</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-way"></i>
+                                                    <h4>Get to the right direction</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-world"></i>
+                                                    <h4>Global lorem eros purus</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-joy"></i>
+                                                    <h4>Enjoyment while you are free</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-bluetooth"></i>
+                                                    <h4>Connect with mobile devices</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-help2"></i>
+                                                    <h4>Premium support 24/7</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="text-block style3"> <i class="pe-7s-lock"></i>
+                                                    <h4>Security with no risk</h4>
+                                                    <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 hidden-xs">
+                                        <div class="layered-imgs"> <img class="back" src="img/thumbs/iphone-layer-2.png" width="570" height="730" alt="iPhone 6"> <img src="img/thumbs/iphone-layer-1.png" width="570" height="730" alt="iPhone 6"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tabFour">
+                                <h2 class="title-heading"><small>Hybrid features</small> Quisque porttitor tempor est at laoreet. Proin ornare vulputate maximus. Vestibulum eu eros varius, commodo dolor nec, pellentesque orci.</h2>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-way"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-umbrella"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-tools"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-timer"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-trash"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-signal"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-pen"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="text-block style4"> <i class="pe-7s-micro"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tabFive">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-4">
+                                        <div class="text-block style3 rtl"> <i class="pe-7s-gift"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                        </div>
+                                        <div class="text-block style3 rtl"> <i class="pe-7s-config"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-4 hidden-xs">
+                                        <div class="layered-imgs"> <img src="img/thumbs/macbook-air.png" width="570" height="340" alt="Mac Book Pro"> </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4">
+                                        <div class="text-block style3"> <i class="pe-7s-comment"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                        </div>
+                                        <div class="text-block style3"> <i class="pe-7s-mouse"></i>
+                                            <h4>Get to the right direction</h4>
+                                            <p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
 	<!-- main features section (tabs) -->
 	<section class="block white-bg features" id="features">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div role="tabpanel"> 
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#tabOne" aria-controls="tabOne" role="tab" data-toggle="tab"><i class="pe-7s-anchor"></i></a></li>
-						<li role="presentation"><a href="#tabTwo" aria-controls="tabTwo" role="tab" data-toggle="tab"><i class="pe-7s-stopwatch"></i></a></li>
-						<li role="presentation"><a href="#tabThree" aria-controls="tabThree" role="tab" data-toggle="tab"><i class="pe-7s-graph1"></i></a></li>
-						<li role="presentation"><a href="#tabFour" aria-controls="tabFour" role="tab" data-toggle="tab"><i class="pe-7s-network"></i></a></li>
-						<li role="presentation"><a href="#tabFive" aria-controls="tabFive" role="tab" data-toggle="tab"><i class="pe-7s-help2"></i></a></li>
-					</ul>
-					
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="tabOne">
-							<div class="row">
-								<div class="col-md-6">
-									<h2>Instant messaging system</h2>
-									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									<ul class="icon-list">
-										<li class="wow fadeInUp" data-wow-delay="0.6s"><i class="pe-7s-comment"></i> Lorem ipsum dolor sitaet, elit. Done lectus non purus vestibulum.</li>
-										<li class="wow fadeInUp" data-wow-delay="0.7s"><i class="pe-7s-compass"></i> Integer quis elit id felis condimentum fermentum.</li>
-										<li class="wow fadeInUp" data-wow-delay="0.8s"><i class="pe-7s-bluetooth"></i> Nulla eleifend justo eu urna ultrices tincidunt pretium.</li>
-										<li class="wow fadeInUp" data-wow-delay="0.9s"><i class="pe-7s-scissors"></i> Quisque lacinia auctor mattis. Duis sed nisl justo.</li>
-										<li class="wow fadeInUp" data-wow-delay="1s"><i class="pe-7s-plug"></i> Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit lectus.</li>
-										<li class="wow fadeInUp" data-wow-delay="1.1s"><i class="pe-7s-joy"></i> Etiam varius dui eget lorem elementum eget mattis sapien interdum.</li>
-										<li class="wow fadeInUp" data-wow-delay="1.2s"><i class="pe-7s-way"></i> Nulla eleifend justo eu urna ultrices sed auctor tincidunt pretium.</li>
-									</ul>
-								</div>
-								<div class="col-md-6 hidden-xs">
-									<div class="layered-imgs"> <img class="wow fadeInRight back" data-wow-delay="1.2s" src="img/thumbs/macbook-pro-layer-2.png" width="570" height="305" alt="Mac Book Pro"> <img class="wow fadeInRight" data-wow-delay="0.6s" src="img/thumbs/macbook-pro-layer-1.png" width="570" height="305" alt="Mac Book Pro"> </div>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="tabTwo">
-							<div class="row">
-								<div class="col-md-6 hidden-xs">
-									<div class="layered-imgs"> <img class="back" src="img/thumbs/imac-layer-2.png" width="570" height="480" alt="iMac Retina"> <img src="img/thumbs/imac-layer-1.png" width="570" height="480" alt="iMac Retina"> </div>
-								</div>
-								<div class="col-md-6">
-									<h2>All the features you need</h2>
-									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante. Etiam varius eget lorem elementum eget mattis interdum.</p>
-									<div class="text-block style2"> <i class="pe-7s-display2"></i>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									</div>
-									<div class="text-block style2"> <i class="pe-7s-shopbag"></i>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									</div>
-									<div class="text-block style2"> <i class="pe-7s-share"></i>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									</div>
-									<div class="text-block style2"> <i class="pe-7s-id"></i>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="tabThree">
-							<div class="row">
-								<div class="col-md-6">
-									<h2>Integration with smartphones</h2>
-									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante, consectetur sit amet vulputate vel, dapibus sit amet lectus. Etiam varius dui eget lorem elementum eget mattis sapien interdum.</p>
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-way"></i>
-												<h4>Get to the right direction</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-world"></i>
-												<h4>Global lorem eros purus</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-joy"></i>
-												<h4>Enjoyment while you are free</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-bluetooth"></i>
-												<h4>Connect with mobile devices</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-help2"></i>
-												<h4>Premium support 24/7</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="text-block style3"> <i class="pe-7s-lock"></i>
-												<h4>Security with no risk</h4>
-												<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 hidden-xs">
-									<div class="layered-imgs"> <img class="back" src="img/thumbs/iphone-layer-2.png" width="570" height="730" alt="iPhone 6"> <img src="img/thumbs/iphone-layer-1.png" width="570" height="730" alt="iPhone 6"> </div>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="tabFour">
-							<h2 class="title-heading"><small>Hybrid features</small> Quisque porttitor tempor est at laoreet. Proin ornare vulputate maximus. Vestibulum eu eros varius, commodo dolor nec, pellentesque orci.</h2>
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-way"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-umbrella"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-tools"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-timer"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-trash"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-signal"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-pen"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="text-block style4"> <i class="pe-7s-micro"></i>
-										<h4>Get to the right direction</h4>
-										<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first web projects.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="tabFive">
-							<div class="row">
-								<div class="col-lg-3 col-sm-4">
-									<div class="text-block style3 rtl"> <i class="pe-7s-gift"></i>
-										<h4>Get to the right direction</h4>
-										<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-									</div>
-									<div class="text-block style3 rtl"> <i class="pe-7s-config"></i>
-										<h4>Get to the right direction</h4>
-										<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-									</div>
-								</div>
-								<div class="col-lg-6 col-sm-4 hidden-xs">
-									<div class="layered-imgs"> <img src="img/thumbs/macbook-air.png" width="570" height="340" alt="Mac Book Pro"> </div>
-								</div>
-								<div class="col-lg-3 col-sm-4">
-									<div class="text-block style3"> <i class="pe-7s-comment"></i>
-										<h4>Get to the right direction</h4>
-										<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-									</div>
-									<div class="text-block style3"> <i class="pe-7s-mouse"></i>
-										<h4>Get to the right direction</h4>
-										<p>Lorem ipsum dolor sitaet, elit. Donec eros velit. In luctus lectus non purus vestibulum.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="title-heading text-center">خدمات</h1>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="text-block style3"> <i class="pe-7s-comment"></i>
+                            <h4>تشخیص نظرات توهین آمیز</h4>
+                            <p align="justify">شناسایی نظرات شامل الفاظ رکیک، غیراخلاقی و توهین به دیگران با دقت بسیار‌بالا به نحوی که شما را از نظارت مستقیم بی‌نیاز می‌کند.</p>
+                        </div>
+                        <div class="text-block style3"> <i class="pe-7s-way"></i>
+                            <h4>تشخیص گرایش نظرات</h4>
+                            <p align="justify">شناسایی نظر کلی کامنت درباره پست اصلی به سه صورت مثبت، منفی و خنثی.</p>
+                        </div>
+                        <div class="text-block style3"> <i class="pe-7s-ticket"></i>
+                            <h4>تشخیص نظرات تبلیغاتی</h4>
+                            <p align="justify">جملات شامل تبلیغات به هر نحوی در این دسته قرار می‌گیرند. این تبلیغات می‌توانند شامل تبلیغ یک کالا، یک سایت یا حتی درخواست از عموم برای بازدید از صفحه شخصی فرد نظردهنده در یک شبکه اجتماعی دیگر باشد. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 hidden-xs">
+                        <div class="layered-imgs"> <img class="wow zoomIn" data-wow-delay="0.6s" src="img/thumbs/macbook-air.png" width="570" height="340" alt="Mac Book Pro"> </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="text-block style3"> <i class="pe-7s-junk"></i>
+                            <h4>تشخیص نظرات نامرتبط با موضوع</h4>
+                            <p align="justify">تشخیص نظراتی که ارتباط موضوعی با پست مربوطه ندارند و احتمالا به تشخیص مدیر سایت، نباید در نظرات نمایش داده شوند.</p>
+                        </div>
+                        <div class="text-block style3"> <i class="pe-7s-albums"></i>
+                            <h4>دسته‌بندی موضوعی نظرات</h4>
+                            <p align="justify">دسته بندی نظرات کاربران و تشخیص تعلق هر کامنت به یکی از دسته‌های موضوعی مانند سیاسی، ورزشی، عاطفی، ادبی و... و دسته بندی های جزئی تر در هر یک از آنها.</p>
+                        </div>
+                        <div class="text-block style3"> <i class="pe-7s-flag"></i>
+                            <h4>ارایه راهکارهای اختصاصی</h4>
+                            <p align="justify">تیم کامنت‌ماینر آماده است برای نیازهای خاص شما راه‌کار‌های اختصاصی در این زمینه ارائه کند.</p>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
 	</section>
-	
-	<!-- fun facts (animated stats counter) -->
-	<section class="block gray-bg no-before facts" id="facts">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="title-heading text-center"><small>It's amazing</small> Some real time stats</h2>
-				<div class="row">
-					<div class="col-md-3 col-xs-6">
-						<div class="stat-wrap wow zoomIn" data-wow-delay="0.6s"> <i class="pe-7s-coffee"></i>
-							<p><strong class="blocked">Cups of </strong> Cofee consumed</p>
-							<h3 class="stat text-center" data-perc="1291"><span class="factor">0</span></h3>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="stat-wrap wow zoomIn" data-wow-delay="0.8s"> <i class="pe-7s-cloud-download"></i>
-							<p><strong class="blocked">Downloads </strong> Since we launched</p>
-							<h3 class="stat text-center" data-perc="38452"><span class="factor">0</span></h3>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="stat-wrap wow zoomIn" data-wow-delay="1s"> <i class="pe-7s-users"></i>
-							<p><strong class="blocked">Total </strong> Active members</p>
-							<h3 class="stat text-center" data-perc="19340"><span class="factor">0</span></h3>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="stat-wrap wow zoomIn" data-wow-delay="1.2s"> <i class="pe-7s-cup"></i>
-							<p><strong class="blocked">Awards </strong> We have won</p>
-							<h3 class="stat text-center" data-perc="345"><span class="factor">0</span></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
-	
-	<!-- CTA download -->
-	<section class="block img-bg img2 download-cta">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
-				<div class="cta">
-					<h2><small class="blocked">Free 30 days trial!</small> Download Your Free Trial Now</h2>
-					<form action="scripts/download.php" method="post" id="downloadForm">
-						<div class="input-group">
-							<input class="form-control input-xl" type="email" name="email" id="downloadEmail" placeholder="Your email address">
-							<div class="input-group-btn">
-								<button type="submit" class="btn btn-primary btn-xl" id="dLoad" ><i class="pe-7f-cloud-download"></i> <span class="hidden-xs">Download</span></button>
-							</div>
-						</div>
-					</form>
-					<div id="dLoadResponse" class="d-load-response"></div>
-					<a class="btn btn-link btn-xl btn-block lightbox"  href="http://vimeo.com/63987795" title="This is a sample video title."><i class="fa fa-play-circle"></i> Watch intorductory video</a> </div>
-			</div>
-		</div>
-	</div>
-	</section>
-	
+
+    <!-- fun facts (animated stats counter) -->
+    <!--<section class="block gray-bg no-before facts" id="facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-heading text-center"><small>It's amazing</small> Some real time stats</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="stat-wrap wow zoomIn" data-wow-delay="0.6s"> <i class="pe-7s-coffee"></i>
+                                <p><strong class="blocked">Cups of </strong> Cofee consumed</p>
+                                <h3 class="stat text-center" data-perc="1291"><span class="factor">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="stat-wrap wow zoomIn" data-wow-delay="0.8s"> <i class="pe-7s-cloud-download"></i>
+                                <p><strong class="blocked">Downloads </strong> Since we launched</p>
+                                <h3 class="stat text-center" data-perc="38452"><span class="factor">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="stat-wrap wow zoomIn" data-wow-delay="1s"> <i class="pe-7s-users"></i>
+                                <p><strong class="blocked">Total </strong> Active members</p>
+                                <h3 class="stat text-center" data-perc="19340"><span class="factor">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="stat-wrap wow zoomIn" data-wow-delay="1.2s"> <i class="pe-7s-cup"></i>
+                                <p><strong class="blocked">Awards </strong> We have won</p>
+                                <h3 class="stat text-center" data-perc="345"><span class="factor">0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
 	<!-- team members section -->
-	<section class="block white-bg team" id="team">
+	<!--<section class="block gray-bg team" id="team">
 	<div class="container">
 		<h2 class="title-heading text-center"><small>Our team</small> People behind dove landing page</h2>
-		<div class="row">
+		    <div class="row">
 			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail wow bounceInUp" data-wow-delay="0.6s"> <img src="img/thumbs/thumb1.jpg" alt="Generic placeholder thumbnail">
+				<div class="item thumbnail wow bounceInUp" data-wow-delay="0.6s"> <img src="img/thumbs/thumb1.jpg" alt="Generic placeholder thumbnail">
 					<div class="caption">
 						<h3>Derek Menkesky</h3>
 						<p class="colored">Founder / CEO</p>
@@ -382,7 +482,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail wow bounceInUp" data-wow-delay="1.2s"> <img src="img/thumbs/thumb2.jpg" alt="Generic placeholder thumbnail">
+				<div class="item thumbnail wow bounceInUp" data-wow-delay="1.2s"> <img src="img/thumbs/thumb2.jpg" alt="Generic placeholder thumbnail">
 					<div class="caption">
 						<h3>Robert Leung</h3>
 						<p class="colored">Sr. Project Manager</p>
@@ -399,7 +499,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail wow bounceInUp" data-wow-delay="1.8s"> <img src="img/thumbs/thumb3.jpg" alt="Generic placeholder thumbnail">
+				<div class="item thumbnail wow bounceInUp" data-wow-delay="1.8s"> <img src="img/thumbs/thumb3.jpg" alt="Generic placeholder thumbnail">
 					<div class="caption">
 						<h3>Daniel Chaudhry</h3>
 						<p class="colored">Software Engineer</p>
@@ -416,7 +516,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail wow bounceInUp" data-wow-delay="2.4s"> <img src="img/thumbs/thumb4.jpg" alt="Generic placeholder thumbnail">
+				<div class="item thumbnail wow bounceInUp" data-wow-delay="2.4s"> <img src="img/thumbs/thumb4.jpg" alt="Generic placeholder thumbnail">
 					<div class="caption">
 						<h3>Marc Albert</h3>
 						<p class="colored">Web Graphics Designer</p>
@@ -434,10 +534,10 @@
 			</div>
 		</div>
 	</div>
-	</section>
+	</section>-->
 	
 	<!-- user/client testimonials -->
-	<section class="block img-bg img3 testimonials" id="testimonials">
+	<!--<section class="block img-bg img3 testimonials" id="testimonials">
 	<div class="container">
 		<h2 class="title-heading text-center"><small>Testimonials</small> What our customers are saying</h2>
 		<div class="row">
@@ -537,10 +637,10 @@
 			</div>
 		</div>
 	</div>
-	</section>
+	</section>-->
 	
 	<!-- plans and pricing charts -->
-	<section class="block white-bg no-bottom plans" id="plans">
+	<!--<section class="block white-bg no-bottom plans" id="plans">
 	<div class="container">
 		<h2 class="title-heading text-center"><small>Simple pricing</small> You will love it, is not you?</h2>
 		<div class="row">
@@ -603,7 +703,7 @@
 			</div>
 		</div>
 	</div>
-	</section>
+	</section>-->
 	<hr>
 	
 	<!-- FAQ -->
@@ -733,7 +833,7 @@
 	<!-- footer -->
 	<footer class="footer">
 	<div class="container">
-		<h2 class="title-heading text-center"><small>News &amp; updates</small> See what is hot today</h2>
+		<!--<h2 class="title-heading text-center"><small>News &amp; updates</small> See what is hot today</h2>
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="short-post"> <a class="post-thumb thumb lightbox hidden-xs" href="img/thumbs/news1.jpg" title="Apple is planning to design a cPhone in 2015."><img class="img-responsive" src="img/thumbs/news1.jpg" width="370" height="245" alt="News one"></a>
@@ -753,15 +853,9 @@
 					<p class="post-meta"><span class="date">Nov 25, 2014</span> <span class="author">by John Doe</span></p>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<hr class="ft-hr">
 		<div class="row">
-			<div class="col-md-7">
-				<div class="copyright"> <a href="#home" class="ft-logo" title="Dove - Modern Start Up Landing Page"><img src="img/logos/logo-ft.png" width="124" height="45" alt="Dove"></a>
-					<div class="copy-text"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" title="Contact Us">Contact Us</a> -  IT Heights, 345 X-Highway 35672, NY, USA.<br>
-						<small>&copy; 2014 Your Awesome Company | All Rights Reserved</small> </div>
-				</div>
-			</div>
 			<div class="col-md-5">
 				<div class="ft-social">
 					<div class="social">
@@ -775,36 +869,49 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-md-7">
+				<div class="copyright">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="copy-text"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" title="Contact Us">ارتباط با ما</a> آدرس: فلان جا<br>
+								<small>&copy; 2016 CommentMiner.ir | All Rights Reserved</small> </div>
+						</div>
+						<div class="col-md-6">
+							<a href="#home" class="ft-logo" title="کامنت ماینر - مدیریت نظرات"><img src="img/logos/logo%20(1).png" height="45" alt="commentminer"></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	</footer>
 	
 	<!-- Button trigger modal -->
-	<div class="contact-icon"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="contact-link tip" data-placement="top" title="Contact Us Now"><i class="pe-7s-mail wow flash" data-wow-duration="3s" data-wow-iteration="1000"></i></a> </div>
+	<div class="contact-icon"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="contact-link tip" data-placement="top" title="ارتباط با ما"><i class="pe-7s-mail wow flash" data-wow-duration="3s" data-wow-iteration="1000"></i></a> </div>
 	
 	<!-- Modal with contact form -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">بستن</span></button>
+					<h4 style="color: #000;" class="modal-title" id="myModalLabel">ارتباط با ما</h4>
 				</div>
 				<div class="modal-body">
 					<form role="form" class="form" method="post" id="contactForm" action="scripts/send.php">
 						<div class="form-group">
-							<label for="visiterName">Name <sup>*</sup></label>
-							<input type="text" class="form-control input-xl" id="visiterName" name="name" placeholder="Full Name">
+							<label for="visiterName">نام <sup>*</sup></label>
+							<input type="text" class="form-control input-xl" id="visiterName" name="name" placeholder="نام کامل">
 						</div>
 						<div class="form-group">
-							<label for="visiterEmail">Email <sup>*</sup></label>
-							<input type="email" class="form-control input-xl" id="visiterEmail" name="email" placeholder="Email">
+							<label for="visiterEmail">ایمیل <sup>*</sup></label>
+							<input type="email" class="form-control input-xl" id="visiterEmail" name="email" placeholder="ایمیل">
 						</div>
 						<div class="form-group">
-							<label for="visiterMessage">Message <sup>*</sup></label>
+							<label for="visiterMessage">پیام <sup>*</sup></label>
 							<textarea class="form-control" id="visiterMessage" name="message" rows="5"></textarea>
 						</div>
-						<input type="submit" class="btn btn-primary btn-xl btn-block" id="send" value="Send Message">
+						<input type="submit" class="btn btn-primary btn-xl btn-block" id="send" value="ارسال پیام">
 					</form>
 					<div id="response"></div>
 				</div>
@@ -825,7 +932,7 @@
 <script src="scripts/validate.js"></script> 
 <script src="scripts/form.js"></script> 
 <script src="scripts/contact.js"></script> 
-<script src="scripts/count-to.js"></script> 
+<script src="scripts/count-to.js"></script>
 <script src="scripts/owl.js"></script> 
 <script src="scripts/smooth-scroll.js"></script> 
 <script src="scripts/smoothscroll.min.js"></script> 
