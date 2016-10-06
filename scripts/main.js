@@ -127,6 +127,20 @@ $('.tlt').textillate({
 		stopOnHover: true,
 		pagination: false,
 		});
+	//Customer Slider (owl carousel settings)
+	$("#customer-owl-carousel").owlCarousel({
+		items: 4,
+		itemsDesktop: [1199,5],
+		itemsDesktopSmall: [980,4],
+		itemsTablet: [768,3],
+		itemsTabletSmall: [590,2],
+		itemsMobile: [479,1],
+		autoPlay: true,
+		autoplayTimeout: 10,
+		stopOnHover: true,
+		pagination: true,
+		navigation : true,
+		});
 	
 	//Testimonials Slider (owl carousel settings)
 	$("#testimonial-carousel").owlCarousel({
@@ -138,7 +152,7 @@ $('.tlt').textillate({
 		itemsMobile: [479,1],
 		autoPlay: true,
 		stopOnHover: true,
-		pagination: false,
+		pagination: true,
 		transitionStyle: 'fadeUp'
 		});
 		
