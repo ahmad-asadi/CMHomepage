@@ -37,7 +37,7 @@ $('.tlt').textillate({
   selector: '.texts',
 
   // enable looping
-  loop: true,
+  //loop: true,
 
   // sets the minimum display time for each text before it is replaced
   minDisplayTime: 4000,
