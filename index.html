@@ -29,7 +29,7 @@
 <!-- preloader -->
 <div id="loader-wrapper">
 	<div id="loader" class="loader"></div>
-	<p class="wow flash strong" data-wow-duration="2s" data-wow-iteration="1000">در حال بارگزاری ...</p>
+	<p class="wow flash strong" data-wow-duration="2s" data-wow-iteration="1000">در حال بارگذاری ...</p>
 </div>
 
 <!-- main wrapper -->
@@ -54,9 +54,9 @@
 			<div class="navbar-collapse collapse navscroll">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#home">خانه</a></li>
-					<li><a href="#description">کامنت ماینر چیست؟</a></li>
+					<li><a href="http://commentminer.ir/about">کامنت ماینر چیست؟</a></li>
 					<li><a href="#features">خدمات</a></li>
-					<li><a href="#customer">مشتریان</a></li>
+					<!--<li><a href="#customer">مشتریان</a></li>-->
 					<!--<li><a href="#testimonials">Testimonials</a></li>-->
 					<!--<li><a href="#plans"></a></li>-->
 					<!--<li><a href="#faq">تماس با ما</a></li>-->
@@ -77,41 +77,18 @@
 		</h1>
 		<p class="strong wow fadeIn" data-wow-delay="1s">کاربرانتان چه می&zwnj;گویند؟</p>
 		<div class="cta-wrap">
-			<div class="try-it-wrap wow fadeInLeft" data-wow-delay="3s"><a href="http://api.commentminer.ir" class="btn btn-primary btn-xl" title="امتحان کن!"><i class="fa fa-angle-double-right"></i> امتحان کنید! </a> </div>
-			<div class="watch-wrap wow fadeInRight" data-wow-delay="3s"> <a class="btn btn-link btn-xl lightbox"  href="#description" title="آشنا شو!"><i class="fa fa-angle-down"></i> بیشتر آشنا شوید!</a> </div>
+			<div class="try-it-wrap wow fadeInLeft" data-wow-delay="3s"><a href="#testAPI" class="btn btn-primary btn-xl" title="امتحان کن!"><i class="fa fa-angle-double-right"></i> امتحان کنید! </a> </div>
+			<div class="watch-wrap wow fadeInRight" data-wow-delay="3s"> <a class="btn btn-link btn-xl lightbox"  href="http://commentminer.ir/about" title="آشنا شو!"><i class="fa fa-angle-down"></i> بیشتر آشنا شوید!</a> </div>
 		</div>
 		<div class="container img-slides">
 			<img src="img/thumbs/slide-img-2.jpg" class="left-img wow fadeInUp" data-wow-delay="2.2s" id="slideLeft" width="770" height="400" alt="Put you own image title here">
 			<img src="img/thumbs/slide-img-3.jpg" class="right-img wow fadeInUp" data-wow-delay="1.6s" id="slideRight" width="770" height="400" alt="Put you own image title here">
 			<div class="row">
 				<div class="col-xs-8 col-xs-offset-2"><img class="wow fadeInUp" data-wow-delay="1s" src="img/thumbs/slide-img-1.jpg" id="slideFront" width="770" height="400" alt="Put you own image title here"></div>
-			</div>
+			</div>z
 		</div>
 	</section>
 	
-	<!-- client logos -->
-	<section class="clients">
-	<div class="container">
-		<!--<div class="owl-carousel" id="owl-carousel">-->
-		<form action="api.commentminer.ir" method="post" id="testForm" class="col-sm-10">
-			<div class="input-group">
-				<input class="form-control input-xl" type="email" name="email" id="testText" placeholder="همین حالا امتحان کنید">
-				<div class="input-group-btn">
-					<button type="submit" class="btn btn-primary btn-xl" id="testBtn" ><span class="hidden-xs">امتحان کن </span></button>
-				</div>
-			</div>
-		</form>
-			<!--<div><a href="#" title="3docean"><img src="img/logos/3docean.png" width="165" height="35" alt="3docean"></a></div>-->
-			<!--<div><a href="#" title="activeden"><img src="img/logos/activeden.png" width="165" height="35" alt="activeden"></a></div>-->
-			<!--<div><a href="#" title="audiojungle"><img src="img/logos/audiojungle.png" width="165" height="35" alt="audiojungle"></a></div>-->
-			<!--<div><a href="#" title="codecanyon"><img src="img/logos/codecanyon.png" width="165" height="35" alt="codecanyon"></a></div>-->
-			<!--<div><a href="#" title="photodune"><img src="img/logos/photodune.png" width="165" height="35" alt="photodune"></a></div>-->
-			<!--<div><a href="#" title="themeforest"><img src="img/logos/themeforest.png" width="165" height="35" alt="themeforest"></a></div>-->
-			<!--<div><a href="#" title="videohive"><img src="img/logos/videohive.png" width="165" height="35" alt="videohive"></a></div>-->
-		<!--</div>-->
-	</div>
-	</section>
-
     <!--&lt;!&ndash; description section (tabs) &ndash;&gt;-->
     <!--<section class="block white-bg features" id="description">-->
         <!--<div class="container">-->
@@ -863,7 +840,37 @@
 	</div>
 	</section>-->
 
-	
+	<!-- client logos -->
+	<section class="block img-bg img2 download-cta" id="testAPI">
+		<div class="container">
+			<!--<div class="owl-carousel" id="owl-carousel">-->
+			<form action="api.commentminer.ir" method="post" id="testForm" class="col-sm-10">
+				<div class="input-group">
+					<input class="form-control input-xl" type="email" name="email" id="testText" placeholder="همین حالا امتحان کنید">
+					<div class="input-group-btn">
+						<button type="button" onclick="testAPI()" class="btn btn-primary btn-xl" id="testBtn" ><span class="hidden-xs">امتحان کن </span></button>
+					</div>
+				</div>
+			</form>
+
+			<div class="col-sm-2">
+				<button class="btn btn-primary btn-xl" id="resNeg"  style="float: left;"><span class="hidden-xs">توهین‌آمیز</span></button>
+				<button class="btn btn-success btn-xl" id="resPos"  style="float: left;"><span class="hidden-xs">مورد تایید</span></button>
+			</div>
+			<!--<div><a href="#" title="3docean"><img src="img/logos/3docean.png" width="165" height="35" alt="3docean"></a></div>-->
+			<!--<div><a href="#" title="activeden"><img src="img/logos/activeden.png" width="165" height="35" alt="activeden"></a></div>-->
+			<!--<div><a href="#" title="audiojungle"><img src="img/logos/audiojungle.png" width="165" height="35" alt="audiojungle"></a></div>-->
+			<!--<div><a href="#" title="codecanyon"><img src="img/logos/codecanyon.png" width="165" height="35" alt="codecanyon"></a></div>-->
+			<!--<div><a href="#" title="photodune"><img src="img/logos/photodune.png" width="165" height="35" alt="photodune"></a></div>-->
+			<!--<div><a href="#" title="themeforest"><img src="img/logos/themeforest.png" width="165" height="35" alt="themeforest"></a></div>-->
+			<!--<div><a href="#" title="videohive"><img src="img/logos/videohive.png" width="165" height="35" alt="videohive"></a></div>-->
+			<!--</div>-->
+		</div>
+	</section>
+
+
+
+
 	<!-- footer -->
 	<footer class="footer">
 	<div class="container">
@@ -890,28 +897,33 @@
 		</div>-->
 		<hr class="ft-hr">
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-3">
 				<div class="ft-social">
 					<div class="social">
 						<ul>
-							<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+							<!--<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+							<li><a class="tip" data-toggle="tooltip"  href="mailto:commentminer.ir@gmail.com" title="GMAIL"><i class="fa fa-google"></i></a></li>
+							<li><a class="tip" data-toggle="tooltip"  href="https://www.linkedin.com/in/ahmadasadi93" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a class="tip" data-toggle="tooltip"  href="https://facebook.com/sajadkhatiri" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="tip" data-toggle="tooltip"  href="http://www.google.com/profiles/100833570764384329761" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+							<!--<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-9">
 				<div class="copyright">
 					<div class="row">
 						<div class="col-md-6">
-							<div class="copy-text"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" title="Contact Us">ارتباط با ما</a> آدرس: فلان جا<br>
-								<small>&copy; 2016 CommentMiner.ir | All Rights Reserved</small> </div>
+							<div class="copy-text"> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" title="Contact Us">ارتباط با ما</a><br/> آدرس: خیابان حافظ، روبروی سمیه، دانشگاه صنعتی امیرکبیر، دانشکده مهندسی کامپیوتر و فن‌آوری اطلاعات، اتاق ۳۰۱<br>
+								<small>
+									تلفن: ۰۲۱۶۴۵۴۲۷۴۶
+								</small>
+								</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-5">
 							<a href="#home" class="ft-logo" title="کامنت ماینر - مدیریت نظرات"><img src="img/logos/logo%20(1).png" height="45" alt="commentminer"></a>
+							<small>&copy; 2016 CommentMiner.ir | All Rights Reserved</small>
 						</div>
 					</div>
 				</div>
@@ -977,7 +989,8 @@
 <script src="scripts/fittext.js"></script> 
 <script src="scripts/lettering.js"></script> 
 <script src="scripts/textillate.js"></script> 
-<script src="scripts/scroll-to-top.js"></script> 
+<script src="scripts/scroll-to-top.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/testAPI.js"></script>
 </body>
 </html>
